@@ -1,0 +1,9 @@
+DOCUMENTACION
+
+https://gorm.io/docs/index.html
+
+https://gorm.io/docs/connecting_to_the_database.html
+
+MODELOS GORM:
+https://gorm.io/docs/models.html
+
