@@ -61,6 +61,6 @@ func newMySQLDB() {
 }
 
 // Pool retorna una unica instacia de db
-func Pool() *gorm.DB {
+func DB() *gorm.DB {
 	return db
 }
