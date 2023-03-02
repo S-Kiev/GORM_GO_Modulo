@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+
+	modelo "github.com/S-Kiev/GORM_GO_Modulo/modelos"
 	"github.com/S-Kiev/GORM_GO_Modulo/storage"
 )
 
@@ -8,7 +11,15 @@ func main() {
 	driver := storage.MySQL
 	storage.New(driver)
 
+	//OBTENIENDO UN REGISTRO
+
+	miProducto := modelo.Producto{}
+
+	storage.DB().First(&miProducto, 1)
+	fmt.Println(miProducto)
+
 	/*
+
 		OBTENINEDO TODOS LOS REGISTROS
 
 		productos := make([]modelo.Producto, 0)
